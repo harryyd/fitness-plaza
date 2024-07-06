@@ -1,0 +1,154 @@
+::selection{
+    color : white ;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+
+.main-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.left{
+    width : 45% ; 
+    /* border : 2px solid black ;  */
+    padding-right : 130px;
+    padding-left : 40px ;
+    /* border : 2px solid green */
+}
+.left > h1{
+    text-align: left;
+    font-size: 50px;
+    font-weight: 700;
+}
+.right{
+    width: 50% ; 
+    padding-left : 20px;
+    /* border : 2px solid green */
+}
+.contact_heading {
+    text-align: center;
+    /* border : 2px solid black ;    */
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.names{
+    display: flex ;
+    justify-content: space-between;
+}
+#lastname{
+    margin-right: 10px;
+}
+
+.input_tag{
+    padding : 7px ;
+    border: 0.7px solid rgb(134, 133, 133) ;
+    width : 22vw;
+    background-color: rgb(243, 242, 242);
+}
+#email-input-tag{
+    width : 40vw
+}
+
+@media (max-width:515px){
+    .test { 
+        border:12px solid rgb(56, 1, 1)  ;
+    }
+    #image-target {
+        display: none;
+        flex-direction: column;
+        padding: none; 
+        margin: none ;
+        /* border:12px solid rgb(56, 1, 1)  ;  */
+    }
+    #herobanner-inter-photo2{
+        width:50% ; 
+        margin-right: none;
+        padding: none; 
+        border:12px solid rgb(56, 1, 1)  ;  
+    }
+    #herobanner-inter-photo1{
+        width:55% ; 
+        margin: none;
+        padding: none; 
+        border:12px solid rgb(56, 1, 1)
+    }
+}/* flex-wrap: wrap; */
+/* @media (max-width : 520px) {
+    #herobanner-inter-photo1{
+        width : 100% ; 
+        margin-left : 20vw;
+        
+    }
+    #image-target {
+        border:12px solid rgb(56, 1, 1)  ; 
+    }
+} */
+
+@media (max-width:1023px) {
+
+    #herobanner1-photos{
+        margin-bottom: 20vw;
+        margin-top: 15vw;
+    }
+    #herobanner-photo1{
+        margin-bottom: 15vh;
+        /* margin-top: 15vh; */
+    }
+    #herobanner-photo2{
+        /* z-index: -1; */
+        margin-top: 15vh;
+    }
+}
+@media (max-width : 1000px) {
+    #homebanner3{
+        margin-left: 1vw;
+    }
+}
+@media (max-width : 850px) {
+    .main-div{
+        display: flex;
+        flex-direction: column;
+        margin-left : 10vw ;
+        row-gap: 1em;
+        /* border : 2px solid black */
+        /* flex-wrap: wrap; */
+    }
+
+    .left{
+        /* border : 2px solid green ;  */
+        width : 100% ;
+        padding-left: 20px;
+    }
+    .names{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.6em;
+    }
+    .input_tag{
+        width : 52vh;
+    }
+    #email-input-tag{
+        width : 52vh
+    }
+    #lastname{
+        margin: 0px;
+    }
+    #herobanner2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #herobanner2 > p {
+        margin-left: 6vw;
+        margin-top: 6vw;
+    }
+    #homebanner3{
+        margin-left: 1vw;
+    }
+}
+/* .left_heading{
+
+} */
