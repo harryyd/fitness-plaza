@@ -39,16 +39,16 @@ const Sidebar = (props) => {
 
   return (
     <div  style={{position: "sticky" , top :0 }}>
-      <aside className="w-full p-6 sm:w-60 dark:bg-gray-900 dark:text-gray-100" style={{position: "sticky" , top :"70px" }}>
+      <aside className="w-full p-6 sm:w-60 dark:bg-black dark:text-gray-100" style={{position: "sticky" , top :"70px",minHeight:"500px" }}>
 	<nav className="space-y-8 text-sm">
 		<div className="space-y-2">
-			<h2 className="text-sm font-semibold tracki uppercase dark:text-gray-400">Getting Started</h2>
+			<h2 className="text-sm font-semibold tracki uppercase dark:text-gray-400">Body part list</h2> <hr/>
 			<div className="flex flex-col space-y-1 cursor-pointer ">
 				{
 					data.map((single , index) =>{
 						return(
 							<>
-								<p key={index} onClick={() => dataFetchingHandler(single)} className='cursor-pointer'> {single} </p>
+								<p key={index} onClick={() => dataFetchingHandler(single)} className='cursor-pointer  uppercase hover:text-violet-400 hover:tracking-wide'> {single} </p>
 							</>
 						) 
 					

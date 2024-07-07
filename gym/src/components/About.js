@@ -1,20 +1,22 @@
 import React from 'react'
+import "./contact.css"
 
 const About = () => {
   return (
-    <div>
-    <div className='text-5xl font-extrabold pl-10 pr-20 text-center mt-[30px]'> ABOUT US </div>
+    <div id="about">
+    <div className='text-5xl font-extrabold pl-10 pr-20 text-center'> ABOUT US </div>
       <div className="p-5 mx-auto sm:p-10 md:p-16 dark:text-gray-100">
 	<div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">
 		<img src="img.jpg" alt="" className="w-full h-60 sm:h-96 dark:bg-gray-500" />
-		<div className="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-md dark:bg-black">
+
+		<div className="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-md dark:bg-black aboutDescription">
 			<div className="space-y-2 ">
 				{/* <a rel="noopener noreferrer" href="#" className="inline-block text-2xl font-semibold sm:text-3xl">The Best Activewear from the Nordstrom Anniversary Sale</a> */}
 				<p className="text-xs dark:text-gray-400">By Harshit yadav
 					{/* <a rel="noopener noreferrer" href="#" className="text-xs hover:underline">Leroy Jenkins</a> */}
 				</p>
 			</div>
-			<div className=" dark:text-gray-100">
+			<div className=" dark:text-gray-100 aboutDescription" >
 				<p>
 
             Welcome to wildfire fitness, where fitness meets fun!
