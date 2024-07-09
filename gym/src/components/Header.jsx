@@ -17,10 +17,10 @@ export default function Header() {
                     </Link>
                     <div className="flex items-center lg:order-2">
                         <Link
-                            to="/"
-                            className="text-black dark:bg-violet-400 hover:text-white focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                            to="/login"
+                            className="text-black dark:bg-violet-400 hover:text-white focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none hover:bg-black ease-in duration-300 hover:border hover:border-violet-400"
                         >
-                            Get started
+                            Login
                         </Link>
                     </div>
                     <div

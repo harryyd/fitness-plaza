@@ -1,27 +1,19 @@
-const express = require("express") ; 
+const express = require("express") ;
 const app = express() ;
-const cors = require('cors');
+const api = require("./routes/api")
 
+app.use(express.json()) ; 
 
-app.use(express.json());
-app.use(cors());
+app.use("/api" , api) ; 
 
 app.get("/" , (req,res)=>{
     res.json({
-        hi : "hello"
-    }) ;
-})
-
-app.post("/api/gym" , (req,res)=>{
-    // const {firstname ,lastname, email, date } = req.body
-    const {data} = req.body 
-    console.log(data)
-    res.status(200).json({
-        status : "all ok"
+        message : "true"
     })
 })
 
-const port = 5000 ;  
-app.listen(port, ()=>{
-    console.log(`server running at port ${port} `)
+
+
+app.listen(3000 , (req,res)=>{
+    console.log("listening") ; 
 })
