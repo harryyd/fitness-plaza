@@ -1,6 +1,17 @@
 const mongoose  = require("mongoose") ; 
 
-const itemSchema = mongoose.Schema({
-    
+const WorkoutSchema = mongoose.Schema({
+    name : {
+        type : String ,
+        required : true 
+    },
+    description : {
+        type : String ,
+        required : true 
+    } ,
+    instructors :{
+        type : mongoose.Schema.ObjectId ,
+        ref : "User" 
+    }
 })
-const Item = mongoose.model('Item', itemSchema);
+module.exports = mongoose.model('Workout', WorkoutSchema);

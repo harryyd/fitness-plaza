@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
     return (
@@ -35,8 +35,13 @@ const Signup = () => {
                         </div>
                         <div className="grid gap-2">
                             <label htmlFor="password">Password</label>
-                            <input id="password" type="password" className='p-2 bg-black text-white border border-gray-800'/>
+                            <input id="password" type="password" className='p-2 bg-black text-white border border-gray-800' />
                         </div>
+
+                        {/* role  */}
+
+
+
                         <button type="submit" className="w-full bg-white text-black hover:bg-black hover:text-white ease-in duration-300 border border-gray-800 p-3 rounded-md">
                             Create an account
                         </button>
@@ -52,6 +57,7 @@ const Signup = () => {
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }
