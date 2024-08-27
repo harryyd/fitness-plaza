@@ -13,6 +13,13 @@ import App from './App.js'
 import { Auth0Provider } from '@auth0/auth0-react';
 import Login from './components/Login.js'
 import Signup from './components/Signup.js'
+import Tranning from './components/Tranning.js'
+import Profile from './components/Profile.js'
+import Program from './components/Program/Program.jsx'
+import SingleProgram from './components/Program/SingleProgram.js'
+import Cart from './components/Payments/Cart.jsx'
+import Payment from './components/Payments/Payment.jsx'
+import PaymentSuccess from './components/Payments/PaymentSuccess.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -48,8 +55,16 @@ const router = createBrowserRouter(
       <Route path='book' element={<Book />} />
       <Route path= 'login' element={<Login/>} />
       <Route path= 'Signup' element={<Signup/>} />
+      <Route path= 'api/createWorkout' element={<Tranning/>} />
+      <Route path= 'profile' element={<Profile/>} />
+      <Route path = "program" element ={<Program />} />
+      {/* <Route path = 'card' element={<Program/>} />  */}
+      <Route path= 'SingleProgram' element={<SingleProgram/>} />
+      <Route path= 'cart' element={<Cart />} />
+      <Route path= 'confirmation' element={<Payment />} />
+      <Route path= 'checkout' element={<PaymentSuccess />} />
 
-    </Route>
+    </Route> 
   )
 )
 

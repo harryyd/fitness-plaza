@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 import Context from './contexxt/Context';
 
 const Singleexercise = () => {
-  const { id } = useParams();
+  const {id} = useParams();
   const newid = id.substring(1);
-  console.log("newid ", newid)
+  // let newid1 = "3293" ;
 
 
   const { setSinglebodypartdata, singlebodypartdata } = useContext(Context);
@@ -14,11 +14,11 @@ const Singleexercise = () => {
   useEffect(() => {
     const SingleexerciseDataFetch = async () => {
       try {
-        const url = `https://exercisedb.p.rapidapi.com/exercises/exercise/3293`;
+        const url = `https://exercisedb.p.rapidapi.com/exercises/exercise/${newid}`;
         const options = {
           method: 'GET',
           headers: {
-            'x-rapidapi-key': '47345d327amsh1f7f995b4f17387p12ab4ajsn6a2c5cfde5ae',
+            'x-rapidapi-key': 'a79a6c9b94msh14f222cdc209b6dp141dcdjsn3dd31b6e8aee',
             'x-rapidapi-host': 'exercisedb.p.rapidapi.com'
           }
         };

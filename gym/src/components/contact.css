@@ -91,6 +91,8 @@ body{
     /*  */
 }
 
+
+
 @media (max-width : 1024px) {
 
     #herobanner-photo1{
@@ -314,6 +316,11 @@ body{
         margin : 0px ;
         width : 80% ;
     } 
+
+    #signup-names{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 

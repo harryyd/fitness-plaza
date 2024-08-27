@@ -6,6 +6,8 @@ const Contextprovider = ({children}) => {
     const [bodypartdata ,  setBodypartdata] = useState([])  ;
     const [singlebodypartdata , setSinglebodypartdata] = useState([])
     const [test , setTest] = useState([])
+    const [isLogin , setLogin] = useState(false) ;
+    const [userdata , setUserdata] = useState({})
 
     const url = 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/back?limit=20';
     const options = {
@@ -40,7 +42,7 @@ const Contextprovider = ({children}) => {
 
   return (
     <>    
-        <Context.Provider value={{ bodypartdata, setBodypartdata ,test , setTest , singlebodypartdata ,setSinglebodypartdata ,bodypart ,setBodypart}}>
+        <Context.Provider value={{ bodypartdata, setBodypartdata ,test , setTest , singlebodypartdata ,setSinglebodypartdata ,bodypart ,setBodypart ,isLogin , setLogin ,userdata ,setUserdata}}>
             {children}
         </Context.Provider>
             

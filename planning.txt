@@ -1,0 +1,28 @@
+authentication booking only authenticated 
+
+program and subscription design and implementation 
+admin section crud program 
+create -> writing blog code  
+
+testimonials and blog 
+user section crud 
+create -> writing blog code   
+
+
+todo - program design 
+
+create program backend for admin only 
+razorpay integration 
+
+
+
+future scope 
+1:1 personal trainer chating and video calling system 
+
+
+contact us changes put map instead of paragraph  
+sign up with google and login with login 
+ 
+
+form ka data utha kar backend ke through database me store karwana hai 
+

@@ -4,17 +4,18 @@ const WorkoutSchema = mongoose.Schema({
     name : {
         type : String ,
         unique :true,
-        required : true 
+        required : true ,
+        uppercase : true
     },
     description : {
         type : String ,
         required : true 
     } ,
-    sessionTimeAvailability: [{
-        type :{type :String , required:true}, 
-        timing :{type : Number , required:true},
+    sessionTimeAvailability: {
+        type :{type :[String] , required:true}, 
+        timing :{type : [String] , required:true},
         sessionDuration : {type :Number , default : 1}
-    }],
+    },
     instructors :{
         type : mongoose.Schema.ObjectId ,
         ref : "User" 

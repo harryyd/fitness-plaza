@@ -2,7 +2,11 @@ const mongoose = require("mongoose") ;
 // const User = require("./user") ; 
 
 const bookingSchema = mongoose.Schema({
-    name :{
+    firstname :{
+        type : String  ,
+        required:true 
+    },
+    lastname :{
         type : String  ,
         required:true 
     },
@@ -18,13 +22,16 @@ const bookingSchema = mongoose.Schema({
         required : true
     },
     sessionTime : {
-        type : Number  ,
-    } ,
+        type : String  ,
+    },
     duration :{
         type : Number  ,
+        min : 1 ,
+        max : 3,
     },
     workoutSessionType: {
-        type : String,
+        type :mongoose.Schema.ObjectId ,
+        ref : "Workout"
     },
     user : {
         type : mongoose.Schema.ObjectId ,
